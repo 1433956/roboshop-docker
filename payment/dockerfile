@@ -7,7 +7,7 @@ ENV CART_HOST="cart"\
     AMQP_HOST="rabbitmq"\
     AMQP_USER="roboshop"\
     AMQP_PASS="roboshop123"
-COPY reuirements.txt .
+COPY requirements.txt .
 COPY *.py .
 COPY payment.ini .
 RUN pip3 install -r requirements.txt
