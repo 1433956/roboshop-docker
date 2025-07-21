@@ -60,7 +60,7 @@ services:
     - cart
   frontend:
     image: raghu73/frontend:v1
-    container_name: froontend
+    container_name: frontend
     ports:
     - "80:80"  #hostport: container port
     depends_on:
