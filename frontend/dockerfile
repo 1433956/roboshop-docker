@@ -1,7 +1,7 @@
 FROM nginx:1.29.0-alpine
-RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
-RUN rm /etc/nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
+RUN rm /etc/nginx/nginx.conf /etc/nginx/conf.d/default.conf
+RUN addgroup -S roboshop && adduser -S roboshop -G roboshop
 
 RUN mkdir -p /var/cache/nginx/client_temp && \
         mkdir -p /var/cache/nginx/proxy_temp && \
