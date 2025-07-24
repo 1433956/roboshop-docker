@@ -11,7 +11,7 @@ RUN mkdir -p /var/cache/nginx/client_temp && \
         chown -R roboshop:roboshop /var/cache/nginx && \
         chown -R roboshop:roboshop /etc/nginx/ && \
         chmod -R 755 /etc/nginx/ && \
-        chown -R boshop:roboshopx /var/log/nginx
+        chown -R roboshop:roboshopx /var/log/nginx
 
 RUN mkdir -p /etc/nginx/ssl/ && \
     chown -R roboshop:roboshop /etc/nginx/ssl/ && \
